@@ -1,0 +1,95 @@
+header > div {
+    background-color: rgba(219, 150, 80, 0.97);
+    margin: 0;
+}
+
+/*Box debug border class*/
+.makeborder {
+    border: 1px dashed red;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+/*This is the main container*/
+.main {
+    position: relative;
+    min-height: 100%;
+}
+
+/*This styles the svg logo on the left top corner*/
+.logo {
+    height: 75px;
+    margin-top: 1em;
+}
+
+/*This is the style for the content container*/
+.content {
+    position: relative;
+    margin-top: 0;
+    overflow: auto;
+}
+
+/*This styles the footer. Shows it at the bottom, but scrolls with the
+  content when content overflows the viewport*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #004276;
+    height: 40px;
+}
+
+/*This helps the content bottom items getting hidden behind the footer, with no vertical scrollbar*/
+.footerfiller {
+    position: relative;
+    height: 50px;
+    display: block;
+}
+
+/*Styles the image*/
+.thinborder img {
+    display: block;
+    border: 1px solid #9c947c;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/*Adds a dynamic border color when the user hovers over the images*/
+.thinborder img:hover {
+    background-color: rgba(21, 241, 19, 0.75);
+}
+
+/*Styles the thumbnail images to align horizontally and provides separation */
+.thinborder img.img-thumbnail {
+    display: inline-block;
+    border: 1px solid #9c947c;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+/*Style the figure element to be inline-block*/
+figure {
+    display: inline-block;
+}
+
+/*Styles the figure caption*/
+figcaption {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: #777777;
+}
+
+/*Hide jQuery dialog div to not take document space*/
+#dialog {
+    display: none;
+}
